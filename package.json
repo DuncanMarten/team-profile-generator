@@ -1,0 +1,28 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Command-line based application that helps the user create a webpage with their employees info on it.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuncanMarten/team-profile-generator.git"
+  },
+  "author": "Duncan Marten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuncanMarten/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/DuncanMarten/team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
