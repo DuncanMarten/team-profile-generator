@@ -14,8 +14,7 @@ test("gets manager's office number", () => {
 });
 
 test("gets manager's role", () => {
-    const manager = new Manager('George', 123, '123@123.com', 42);
-    manager.role = 'manager';
+    const george = new Manager('George', 123, '123@123.com', 42);
 
-    expect(manager.getRole()).toBe('manager');
+    expect(george.getRole(george.role)).toBe('manager');
 });

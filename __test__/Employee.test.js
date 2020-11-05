@@ -25,11 +25,12 @@ test("gets employee's email", () => {
     const employee = new Employee('George', 123, '123@123.com');
 
     expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
+    expect(employee.getEmail()).toEqual(expect.stringContaining('@'));
+    expect(employee.getEmail()).toEqual(expect.stringContaining('.com'));
 });
 
 test("gets employee's role", () => {
-    const employee = new Employee('George', 123, '123@123.com');
-    employee.role = 'employee';
+    const george = new Employee('George', 123, '123@123.com');
 
-    expect(employee.getRole()).toBe('employee');
+    expect(george.getRole(george.role)).toBe('employee');
 });
