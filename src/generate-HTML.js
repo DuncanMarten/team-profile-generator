@@ -28,7 +28,7 @@ const generateEmployees = employeesArr => {
                     </div>
                     <div class="card-body">
                         <p class="card-text">ID: ${id}</p>
-                        <p class="card-text">Email: <a href="" class="card-link">${email}</a></p>
+                        <p class="card-text">Email: <a href="mailto:${email}" class="card-link">${email}</a></p>
                         <p class="card-text">Office Number: ${officeNumber}</p>
                     </div>
                 </div>
@@ -46,8 +46,8 @@ const generateEmployees = employeesArr => {
                     </div>
                     <div class="card-body">
                         <p class="card-text">ID: ${id}</p>
-                        <p class="card-text">Email: <a href="" class="card-link">${email}</a></p>
-                        <p class="card-text">GitHub: <a href="" class="card-link">${github}</a></p>
+                        <p class="card-text">Email: <a href="mailto:${email}" class="card-link">${email}</a></p>
+                        <p class="card-text">GitHub: <a href="https://github.com/${github}" target="_blank" class="card-link">${github}</a></p>
                     </div>
                 </div>
             `;
@@ -64,7 +64,7 @@ const generateEmployees = employeesArr => {
                     </div>
                     <div class="card-body">
                         <p class="card-text">ID: ${id}</p>
-                        <p class="card-text">Email: <a href="" class="card-link">${email}</a></p>
+                        <p class="card-text">Email: <a href="mailto:${email}" class="card-link">${email}</a></p>
                         <p class="card-text">School: ${school}</p>
                     </div>
                 </div>
