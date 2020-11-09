@@ -17,7 +17,8 @@
   Go to DuncanMarten github page and find team-profile-generator and clone it to your computer.  You will need node.js as well as inquirer and jest downloaded to the file to work the application.  Once you have all that you are ready to test or use the application.
 
   ## Usage
-  To use the application prompt your command line by typing node index.js.  Then answer all prompts for manager and select add engineer, add intern, or finish building team to move on.  Adding employee will bring up prompts for the next employee and finish build team will push the information you entered and create the html.  All prompts have validation so make sure to add the information asked for.  The email prompt needs to have a @ and .com or it will ask you to add email again. After everything is done the finished product will be added to the file dist and you can see it. View video if you want visual (https://drive.google.com/file/d/1ZQfcdjyfN2Opdvx8QXu4EVWt4xBuT_K6/view).
+  To use the application prompt your command line by typing node index.js.  Then answer all prompts for manager and select add engineer, add intern, or finish building team to move on.  Adding employee will bring up prompts for the next employee and finish build team will push the information you entered and create the html.  All prompts have validation so make sure to add the information asked for.  The email prompt needs to have a @ and .com or it will ask you to add email again. After everything is done the finished product will be added to the file dist and you can see it. View video if you want visual (https://drive.google.com/file/d/1ZQfcdjyfN2Opdvx8QXu4EVWt4xBuT_K6/view).  Sample of the finished product is below.
+  ![Screenshot of employee.html](screenshot.png)
 
   ## License
   [MIT](https://opensource.org/licenses/MIT)
