@@ -17,22 +17,56 @@ const promptManager = employeeData => {
         {
             type: 'input',
             name: 'name',
-            message: "Enter employee's name: "
+            message: "Enter manager's name: ",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter manager's name!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'id',
-            message: "Enter employee's id number: "
+            message: "Enter manager's id number: ",
+            validate: idInput => {
+                if (idInput) {
+                    return true;
+                } else {
+                    console.log("Please enter manager's id!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: "Enter employee's email address: "
+            message: "Enter manager's email address: ",
+            validate: emailInput => {
+                const n = emailInput.includes('@');
+                const x = emailInput.includes('.com');
+                if (emailInput && n && x) {
+                    return true;
+                } else {
+                    console.log(" Please enter manager's email!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'officeNumber',
-            message: "Enter manager's office number: "
+            message: "Enter manager's office number: ",
+            validate: officeNumberInput => {
+                if (officeNumberInput) {
+                    return true;
+                } else {
+                    console.log("Please enter manager's office number!");
+                    return false;
+                }
+            }
         },
         {
             type: 'list',
@@ -67,22 +101,56 @@ const promptEngineer = employeeData => {
         {
             type: 'input',
             name: 'name',
-            message: "Enter employee's name: "
+            message: "Enter engineer's name: ",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter engineer's name!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'id',
-            message: "Enter employee's id number: "
+            message: "Enter engineer's id number: ",
+            validate: idInput => {
+                if (idInput) {
+                    return true;
+                } else {
+                    console.log("Please enter engineer's id!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: "Enter employee's email address: "
+            message: "Enter engineer's email address: ",
+            validate: emailInput => {
+                const n = emailInput.includes('@');
+                const x = emailInput.includes('.com');
+                if (emailInput && n && x) {
+                    return true;
+                } else {
+                    console.log(" Please enter engineer's email!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'github',
-            message: "Enter engineer's GitHub username: "
+            message: "Enter engineer's GitHub username: ",
+            validate: githubInput => {
+                if (githubInput) {
+                    return true;
+                } else {
+                    console.log("Please enter engineer's github username!");
+                    return false;
+                }
+            }
         },
         {
             type: 'list',
@@ -117,22 +185,56 @@ const promptIntern = employeeData => {
         {
             type: 'input',
             name: 'name',
-            message: "Enter employee's name: "
+            message: "Enter intern's name: ",
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log("Please enter intern's name!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'id',
-            message: "Enter employee's id number: "
+            message: "Enter intern's id number: ",
+            validate: idInput => {
+                if (idInput) {
+                    return true;
+                } else {
+                    console.log("Please enter intern's id!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'email',
-            message: "Enter employee's email address: "
+            message: "Enter intern's email address: ",
+            validate: emailInput => {
+                const n = emailInput.includes('@');
+                const x = emailInput.includes('.com');
+                if (emailInput && n && x) {
+                    return true;
+                } else {
+                    console.log(" Please enter intern's email!");
+                    return false;
+                }
+            }
         },
         {
             type: 'input',
             name: 'school',
-            message: "Enter intern's school name: "
+            message: "Enter intern's school name: ",
+            validate: schoolInput => {
+                if (schoolInput) {
+                    return true;
+                } else {
+                    console.log("Please enter intern's school name!");
+                    return false;
+                }
+            }
         },
         {
             type: 'list',

@@ -16,7 +16,7 @@ const generateEmployees = employeesArr => {
         <header class="bg-danger text-white text-center p-2">
             <h1>My Team</h1>
         </header>
-        <main class="col-12 d-flex justify-content-center align-items-center">
+        <main class="col-12 d-flex flex-wrap justify-content-center align-items-center">
         ${employeesArr
             .filter(({ officeNumber }) => officeNumber)
             .map(({ name, id, email, officeNumber }) => {
